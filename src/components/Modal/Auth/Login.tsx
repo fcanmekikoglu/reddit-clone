@@ -103,10 +103,12 @@ const Login: React.FC<LoginProps> = () => {
           fontSize="9pt"
           color="blue.500"
           cursor="pointer"
-          onClick={(prev) => ({
-            ...prev,
-            view: "resetPassword",
-          })}
+          onClick={() =>
+            setAuthModalState((prev) => ({
+              ...prev,
+              view: "resetPassword",
+            }))
+          }
         >
           Reset
         </Text>

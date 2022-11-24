@@ -47,7 +47,6 @@ const AuthModal: React.FC = () => {
             {modalState.view === "resetPassword" && "Reset Password"}
           </ModalHeader>
           <ModalCloseButton />
-          New here?
           <ModalBody
             display={"flex"}
             flexDirection="column"
